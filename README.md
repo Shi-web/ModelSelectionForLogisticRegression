@@ -1,49 +1,48 @@
-# 🧪 Logistic Regression Model Evaluation - Airbnb Listings
+# 🧪 Logistic Regression Model Evaluation – Airbnb Listings
 
 ## 📌 Overview
 
-This lab focuses on the **evaluation phase of the machine learning life cycle**, applying **Logistic Regression** to a real-world classification problem using the **Airbnb "listings" dataset**. You'll define your ML problem, preprocess the data, train baseline and tuned models, evaluate performance, and make the model persistent for future use.
+In this lab, I worked on the **evaluation phase of the machine learning life cycle**, using **Logistic Regression** to solve a classification problem with the **Airbnb "listings" dataset**. I defined the problem, preprocessed the data, trained models, performed hyperparameter tuning, evaluated the models with various metrics, and saved my final model for future use.
 
 ---
 
-## 🗂️ Lab Objectives
+## 🗂️ What I Did
 
-1. **Build your DataFrame & Define the ML problem**
+1. **Built My DataFrame & Defined the ML Problem**
 
-   * Load the Airbnb dataset.
-   * Define the **label** (target variable).
-   * Identify and preprocess **features**.
-   * Create labeled examples.
-   * Split the dataset into **training** and **test** sets.
+   * Loaded the Airbnb dataset.
+   * Chose a **label** (target variable) to predict.
+   * Identified and preprocessed the **features** I needed.
+   * Created labeled examples and split the data into **training** and **test** sets.
 
-2. **Train & Evaluate a Baseline Model**
+2. **Trained & Evaluated a Baseline Model**
 
-   * Train a **Logistic Regression** model using default `scikit-learn` hyperparameters.
-   * Evaluate performance using **accuracy**, **precision**, **recall**, **F1-score**, and **confusion matrix**.
+   * Trained a **Logistic Regression** model using default settings from `scikit-learn`.
+   * Evaluated the model using metrics like **accuracy**, **precision**, **recall**, **F1-score**, and the **confusion matrix**.
 
-3. **Hyperparameter Tuning with Grid Search**
+3. **Tuned Hyperparameters with Grid Search**
 
-   * Perform **GridSearchCV** to find the optimal value of **C** (regularization strength).
-   * Re-train the Logistic Regression model using the optimal `C`.
-   * Re-evaluate and compare to the baseline model.
+   * Used **GridSearchCV** to find the best value for **C**, the regularization strength.
+   * Trained a new Logistic Regression model using the optimal `C` value.
+   * Compared this model's performance against the baseline.
 
-4. **Plot Evaluation Curves**
+4. **Plotted Evaluation Curves**
 
-   * Plot the **Precision-Recall Curve** for both models.
-   * Plot the **ROC Curve** and compute **AUC** for both models.
+   * Plotted the **Precision-Recall Curve** and the **ROC Curve** for both models.
+   * Calculated and compared the **AUC** (Area Under the Curve) values.
 
-5. **Feature Selection**
+5. **Selected Important Features**
 
-   * Use methods such as **Recursive Feature Elimination (RFE)** or **SelectKBest** to identify important features.
-   * Retrain the model using the selected features and compare performance.
+   * Used techniques like **Recursive Feature Elimination (RFE)** and **SelectKBest** to choose the most important features.
+   * Retrained and tested the model using only these features to see how performance changed.
 
-6. **Model Persistence**
+6. **Saved the Final Model**
 
-   * Save the trained model using `joblib` or `pickle` for future inference.
+   * Made the model persistent using `joblib` so I can reuse it later for inference without retraining.
 
 ---
 
-## 🛠️ Technologies Used
+## 🛠️ Tools and Libraries I Used
 
 * Python 3.x
 * pandas
@@ -55,48 +54,40 @@ This lab focuses on the **evaluation phase of the machine learning life cycle**,
 
 ---
 
-## 🧪 How to Run
+## 🧪 How to Run This Lab
 
-1. Install the required libraries:
+1. Install the necessary libraries:
 
    ```bash
    pip install pandas numpy matplotlib seaborn scikit-learn
    ```
 
-2. Run the Jupyter Notebook:
+2. Open the notebook:
 
    ```bash
    jupyter notebook lab_logistic_regression.ipynb
    ```
 
-3. Follow the step-by-step tasks in the notebook.
+3. Go through each step and run the cells to see the model in action.
 
 ---
 
-## 📊 Sample Outputs
+## 📁 Files Included
 
-* Confusion matrix for baseline vs tuned models
-* Precision-Recall and ROC curves with AUC
-* Summary of feature importances
-* Saved `.pkl` model file for future use
-
----
-
-## 📁 Files
-
-* `lab_logistic_regression.ipynb` — Main notebook
-* `listings.csv` — Airbnb dataset
-* `logistic_model.pkl` — Saved model
-* `README.md` — Lab description
+* `lab_logistic_regression.ipynb` – My complete lab notebook
+* `listings.csv` – The Airbnb dataset
+* `logistic_model.pkl` – The saved logistic regression model
+* `README.md` – This file
 
 ---
 
-## ✅ Learning Outcomes
+## ✅ What I Learned
 
-By the end of this lab, you will be able to:
+By completing this lab, I learned how to:
 
-* Define a classification problem and prepare real-world data.
-* Train and evaluate logistic regression models.
-* Use grid search for hyperparameter tuning.
-* Visualize model evaluation metrics.
-* Perform feature selection and persist ML models.
+* Frame a classification problem and prepare real-world data
+* Train and evaluate logistic regression models
+* Tune hyperparameters using grid search
+* Visualize performance using precision-recall and ROC curves
+* Perform feature selection to improve models
+* Save models for future use
